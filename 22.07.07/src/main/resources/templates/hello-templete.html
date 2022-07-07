@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<!-- 타임 리프 문법을 사용하기 위해 추가 -->
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<p th:text="'hello ' + ${name}">hello! empty</p>
+		<!-- thymleaf를 활용, 서버에 연결되지 않아도 껍데기 확인 가능(hello! empty가 나온다.) -->
+	</body>
+</html>
