@@ -10,12 +10,12 @@ public class HelloController {
 
 	@GetMapping("hello")
 	public String hello(Model model) {
-		model.addAttribute("data", "hello!!!");	//data´Â modelÀ» resources/templates/hello.html¿¡ ³Ñ±è
-		return "hello"; // resources/templates/hello.htmlÀ» Ã£¾Æ °¡¶ó´Â °Í
+		model.addAttribute("data", "hello!!!");	//dataëŠ” modelì„ resources/templates/hello.htmlì— ë„˜ê¹€
+		return "hello"; // resources/templates/hello.htmlì„ ì°¾ì•„ ê°€ë¼ëŠ” ê²ƒ
 	}
 	
 	@GetMapping("hello-mvc")
-	public String helloMVC(@RequestParam("name") String name, Model model) { /* µ¥ÀÌÅÍ ³Ñ°ÜÁÖ±â ÇÊ¼ö!! */
+	public String helloMVC(@RequestParam("name") String name /* ì›¹ì—ì„œ parameterë¥¼ ë°›ìŒ */, Model model) { /* ë°ì´í„° ë„˜ê²¨ì£¼ê¸° í•„ìˆ˜!! */
 		model.addAttribute("name", name);
 		return "hello-templete";
 	}
